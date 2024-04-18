@@ -4,6 +4,8 @@ import { getProductById, getProducts, index } from './controller.js'
 const app = express()
 
 app.get('/', index)
+
+// Ruta: /products?category=comfort bicycles
 app.get('/products', getProducts)
 app.get('/products/:id', getProductById)
 
